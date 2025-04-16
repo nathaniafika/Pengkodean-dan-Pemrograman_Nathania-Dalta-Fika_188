@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Qyta Inventory & Penjualan</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <header>
+    <img src="asset/logo.png" alt="Logo Qyta" class="logo">
+    <h1>Qyta Inventory & Penjualan</h1>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Tambah Barang</h2>
+      <form id="inventory-form">
+        <input type="text" id="kode" placeholder="Kode Barang" required>
+        <input type="text" id="nama" placeholder="Nama Barang" required>
+        <input type="number" id="stok" placeholder="Jumlah Stok" required>
+        <input type="number" id="harga" placeholder="Harga Satuan" required>
+        <button type="submit">Tambah</button>
+      </form>
+    </section>
+
+    <section class="table-section">
+      <h2>Daftar Barang</h2>
+      <table id="inventory-table">
+        <thead>
+          <tr>
+            <th>Kode</th>
+            <th>Nama</th>
+            <th>Stok</th>
+            <th>Harga</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
